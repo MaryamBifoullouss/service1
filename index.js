@@ -5,7 +5,7 @@ var os = require("os");
 
 
 // Constants
-const PORT = 8080;
+const PORT = 8888;
 const HOST = '0.0.0.0';
 
 var hostname = os.hostname();
@@ -13,7 +13,7 @@ var hostname = os.hostname();
 const app = express();
 app.get('/service1', (req, res) => {
   console.log(` *** GET /service1 from ------ ${hostname} ------`);
-  res.send(` Service 1 is running on ${hostname}`);
+  res.send(` Service 1 is running on ${hostname}  ; hello maryam !`);
 });
 
 app.get('/service1/hello', (req, res) => {
