@@ -13,7 +13,7 @@ var hostname = os.hostname();
 const app = express();
 app.get('/service1', (req, res) => {
   console.log(` *** GET /service1 from ------ ${hostname} ------`);
-  res.send(` Service 1 is running on ${hostname}  ; hello maryam bifoullouss !`);
+  res.send(` Service 1 is running on ${hostname}  ; hello maryam bi !`);
 });
 
 app.get('/service1/hello', (req, res) => {
